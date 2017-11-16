@@ -7,7 +7,7 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "launch Vue",
+      "name": "Launch Vue",
       "program": "${workspaceFolder}/node_modules/.bin/webpack-dev-server",
       "args": [
         "--inline",
@@ -18,12 +18,10 @@
       "console":"integratedTerminal"
     },
     {
-      "name": "Launch Chrome",
       "type": "chrome",
       "request": "launch",
+      "name": "Launch Chrome",
       "url": "http://localhost:8080",
-      "sourceMaps": true,
-      "webRoot": "${workspaceRoot}",
       "sourceMapPathOverrides": {
         "webpack:///src/*":   "${workspaceRoot}/src/*"
       }
@@ -32,7 +30,7 @@
   "compounds": [
     {
       "name": "Compound",
-      "configurations": ["launch Vue", "Launch Chrome"]
+      "configurations": ["Launch Vue", "Launch Chrome"]
     }
   ]
 }
