@@ -16,6 +16,23 @@
         "${workspaceFolder}/build/webpack.dev.conf.js"
       ],
       "console":"integratedTerminal"
+    },
+    {
+      "name": "Launch Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:8080",
+      "sourceMaps": true,
+      "webRoot": "${workspaceRoot}",
+      "sourceMapPathOverrides": {
+        "webpack:///src/*":   "${workspaceRoot}/src/*"
+      }
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Compound",
+      "configurations": ["launch Vue", "Launch Chrome"]
     }
   ]
 }
