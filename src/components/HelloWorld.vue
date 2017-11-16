@@ -31,8 +31,9 @@ export default {
   },
   methods: {
     doClick() {
-      let a = this.msg;
-      console.log(new Date(), 'do click', a);
+      let a = new Date() + ' do click';
+      this.msg = a;
+      console.log(a);
     }
   }
 }

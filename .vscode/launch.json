@@ -14,7 +14,8 @@
         "--progress",
         "--config",
         "${workspaceFolder}/build/webpack.dev.conf.js"
-      ]
+      ],
+      "console":"integratedTerminal"
     }
   ]
 }
