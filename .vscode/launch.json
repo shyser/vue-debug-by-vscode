@@ -15,6 +15,9 @@
         "--config",
         "${workspaceFolder}/build/webpack.dev.conf.js"
       ],
+      "windows": {
+        "program": "${workspaceFolder}\\node_modules\\webpack-dev-server\\bin\\webpack-dev-server.js"
+      },
       "console":"integratedTerminal"
     },
     {
